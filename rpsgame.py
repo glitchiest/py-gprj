@@ -2,7 +2,7 @@
 import random
 
 # Global variables
-choices = ["rock", "paper", "scissors"]  # 0 = stone, 1 = paper, 2 = scissor
+choices = ["rock", "paper", "scissors"]  # 0 = rock, 1 = paper, 2 = scissor
 user_score = 0
 
 
