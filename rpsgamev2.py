@@ -4,6 +4,7 @@ import random
 choices = ["rock", "paper", "scissors"]  # 0 = rock, 1 = paper, 2 = scissor
 user_score = 0
 computer_score = 0
+pointsNeededCond = True
 
 # Function which compares the computer's and the user's choice and then declares the winner
 def checkResults(user, computer):
@@ -83,7 +84,7 @@ def announceRoundWinner(round_status, user, computer):
         user_score += 1 # Increase user score
     elif round_status == "computerw":
         print("The computer chose {}, You chose {}. The computer WON!".format(computer, user))
-        computer_score += 1
+        computer_score += 1 # Increase computer score
     else:
         print("It's a TIE!")
 
@@ -93,8 +94,18 @@ def displayScore():
     print("The computer's score: {}".format(computer_score))
 
 # Get pointsNeeded from user input
-print("***********************\nRock - Paper - Scissors\n***********************\n")
-pointsNeeded = int(input("How many points are required to win? "))
+while pointsNeededCond == True:
+    # Input handling
+    try:
+        print("***********************\nRock - Paper - Scissors\n***********************\n")
+        pointsNeeded = int(input("How many points are required to win? "))
+        if pointsNeeded  < 1:
+            print("Please enter an integer which is atleast 1")
+        else:
+            pointsNeededCond = False
+
+    except ValueError:
+        print("Please enter an integer which is atleast 1")
 
 
 # The game starts here
