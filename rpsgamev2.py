@@ -4,7 +4,7 @@ import random
 choices = ["rock", "paper", "scissors"]  # 0 = rock, 1 = paper, 2 = scissor
 user_score = 0
 computer_score = 0
-pointsNeededCond = True
+pointsNeededCond = True # condition --> pointsNeeded while loop
 
 # Function which compares the computer's and the user's choice and then declares the winner
 def checkResults(user, computer):
