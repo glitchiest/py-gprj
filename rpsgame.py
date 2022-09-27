@@ -17,26 +17,22 @@ def checkResults(user, computer):
 
         # Win
         elif computer == "scissors":
-            print("The computer chose  {}, You chose {}. You WON!".format(
-                computer, user))
+            print("The computer chose  {}, You chose {}. You WON!".format(computer, user))
             user_score += 1
 
         # Loss
         else:
-            print("The computer chose {}, You chose {}. The computer WON!".format(
-                computer, user))
+            print("The computer chose {}, You chose {}. The computer WON!".format(computer, user))
 
     elif user == "paper":
         # Win
         if computer == "rock":
-            print("The computer chose  {}, You chose {}. You WON!".format(
-                computer, user))
+            print("The computer chose  {}, You chose {}. You WON!".format(computer, user))
             user_score += 1
 
         # Loss
         elif computer == "scissors":
-            print("The computer chose {}, You chose {}. The computer WON!".format(
-                computer, user))
+            print("The computer chose {}, You chose {}. The computer WON!".format(computer, user))
 
         # Tie
         else:
@@ -45,8 +41,7 @@ def checkResults(user, computer):
     else:
         # Loss
         if computer == "rock":
-            print("The computer chose {}, You chose {}. The computer WON!".format(
-                computer, user))
+            print("The computer chose {}, You chose {}. The computer WON!".format(computer, user))
 
         # Tie
         elif computer == "scissors":
@@ -54,8 +49,7 @@ def checkResults(user, computer):
 
         # Win
         else:
-            print("The computer chose  {}, You chose {}. You WON!".format(
-                computer, user))
+            print("The computer chose  {}, You chose {}. You WON!".format(computer, user))
             user_score += 1
 
 
