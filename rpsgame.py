@@ -81,17 +81,17 @@ def computerChoice(choices=[]):
     return computer
 
 
-# Get pointsNeeded from user input
+# Get points_needed from user input
 print("*****************\nRock - Paper - Scissors\n*****************\n")
-pointsNeeded = int(input("How many points are required to win? "))
+points_needed = int(input("How many points are required to win? "))
 
 
 # The game starts here
-while user_score < pointsNeeded and computer_score < pointsNeeded:
+while user_score < points_needed and computer_score < points_needed:
     user = userChoice(choices)
     computer = computerChoice(choices)
     checkResults(user, computer)
-    if user_score == pointsNeeded or computer_score == pointsNeeded:
+    if user_score == points_needed or computer_score == points_needed:
         if user_score > computer_score:
             print("\nYour final score:", user_score)
             print("The computer's final score:", computer_score)
