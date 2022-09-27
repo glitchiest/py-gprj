@@ -99,7 +99,7 @@ while pointsNeededCond == True:
     try:
         print("***********************\nRock - Paper - Scissors\n***********************\n")
         pointsNeeded = int(input("How many points are required to win? "))
-        if pointsNeeded  < 1:
+        if pointsNeeded < 1:
             print("Please enter an integer which is atleast 1")
         else:
             pointsNeededCond = False
