@@ -27,18 +27,18 @@ def fragasvarighetsgrad():  # svårighetsgrad
 
 def rand_tal(svarighetsgrad): # Generera tal enligt svårighetsgrad
     if svarighetsgrad == 1:
-        tal1 = random.randrange(1, 10)
-        tal2 = random.randrange(1, 10)
+        tal1 = random.randint(1, 10) # randint har med upperbound randrange har inte
+        tal2 = random.randint(1, 10)
         talList = [tal1, tal2]
         return talList
     elif svarighetsgrad == 2:
-        tal1 = random.randrange(1, 9) # 10 och 100 för lätt
-        tal2 = random.randrange(11, 99)
+        tal1 = random.randint(1, 9) # 10 och 100 för lätt
+        tal2 = random.randint(11, 99)
         talList = [tal1, tal2]
         return talList
     else:
-        tal1 = random.randrange(11, 99)
-        tal2 = random.randrange(11, 99)
+        tal1 = random.randint(11, 99)
+        tal2 = random.randint(11, 99)
         talList = [tal1, tal2]
         return talList
 
