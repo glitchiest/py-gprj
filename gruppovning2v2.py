@@ -25,20 +25,20 @@ def fragasvarighetsgrad():  # svårighetsgrad
             print("Please enter and integer which is in the range (1-3)")
 
 
-def rand_number(svarighetsgrad):
+def rand_tal(svarighetsgrad): # Generera tal enligt svårighetsgrad
     if svarighetsgrad == 1:
         tal1 = random.randrange(1, 10)
         tal2 = random.randrange(1, 10)
         talList = [tal1, tal2]
         return talList
     elif svarighetsgrad == 2:
-        tal1 = random.randrange(1, 10)
+        tal1 = random.randrange(1, 9) # 10 och 100 för lätt
         tal2 = random.randrange(11, 99)
         talList = [tal1, tal2]
         return talList
     else:
         tal1 = random.randrange(11, 99)
-        tal2 = random.randrange(100, 999)
+        tal2 = random.randrange(11, 99)
         talList = [tal1, tal2]
         return talList
 
@@ -46,7 +46,7 @@ def rand_number(svarighetsgrad):
 def rakna(antal, svarighetsgrad):  # testa svaret
     correct = 0
     for i in range(antal):
-        talList = rand_number(svarighetsgrad)
+        talList = rand_tal(svarighetsgrad)
         tal1 = talList[0]
         tal2 = talList[1]
         print(tal1)
