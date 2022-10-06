@@ -46,13 +46,22 @@ def rand_tal(svarighetsgrad): # Generera tal enligt svårighetsgrad
 def rakna(antal, svarighetsgrad):  # testa svaret
     correct = 0
     for i in range(antal):
+        userInputCheck = True # För user input check
         talList = rand_tal(svarighetsgrad)
         tal1 = talList[0]
         tal2 = talList[1]
         print(tal1)
         product = tal1*tal2
-        print("What is", tal1, "times", tal2, "?")
-        user = int(input())
+       
+       # User input check
+        while userInputCheck == True:
+            try:
+                print("What is", tal1, "times", tal2, "?")
+                user = int(input())
+                userInputCheck = False
+            except:
+                print("Input needs to be an integer")
+
         if (test(product, user) == "Incorrect"):
             print("Sorry, the correct answer is", product)
         elif (test(product, user) == "Correct"):
