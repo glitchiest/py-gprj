@@ -50,7 +50,6 @@ def rakna(antal, svarighetsgrad):  # testa svaret
         talList = rand_tal(svarighetsgrad)
         tal1 = talList[0]
         tal2 = talList[1]
-        print(tal1)
         product = tal1*tal2
        
        # User input check
