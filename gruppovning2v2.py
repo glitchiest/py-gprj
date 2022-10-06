@@ -32,12 +32,12 @@ def rand_number(svarighetsgrad):
         talList = [tal1, tal2]
         return talList
     elif svarighetsgrad == 2:
-        tal1 = random.randrange(10, 99)
-        tal2 = random.randrange(10, 99)
+        tal1 = random.randrange(1, 10)
+        tal2 = random.randrange(11, 99)
         talList = [tal1, tal2]
         return talList
     else:
-        tal1 = random.randrange(100, 999)
+        tal1 = random.randrange(11, 99)
         tal2 = random.randrange(100, 999)
         talList = [tal1, tal2]
         return talList
