@@ -27,7 +27,7 @@ def fragasvarighetsgrad():  # svårighetsgrad
 
 def rand_tal(svarighetsgrad): # Generera tal enligt svårighetsgrad
     if svarighetsgrad == 1:
-        tal1 = random.randint(1, 10) # randint har med upperbound randrange har inte
+        tal1 = random.randint(1, 10) # randint har med upper bound randrange har inte
         tal2 = random.randint(1, 10)
         talList = [tal1, tal2]
         return talList
