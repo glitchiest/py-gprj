@@ -35,7 +35,7 @@ def decrypt(message, key):
     return newmessage
 
 def break_crypt(message):
-    for i in range(1,27,1): # key can be 1-26
+    for i in range(1,26,1): # key can be 1-25 --> k=26 gives the same result as the encrypted message
         newmessage=""
         key = i
         for i in range(len(message)):
